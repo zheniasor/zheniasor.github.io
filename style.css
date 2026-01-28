@@ -218,7 +218,7 @@ header {
 
 .left-side {
   width: 50%;
-  padding: 30px;
+  padding: 50px;
   border-right: 1px solid #e5d1c3;
   box-sizing: border-box;
   position: absolute;
@@ -234,7 +234,7 @@ h10, .subtitle, .services{
 
 .right-side {
   width: 50%;
-  padding: 30px;
+  padding: 50px;
   box-sizing: border-box;
   text-align: left;
   position: absolute;
@@ -284,3 +284,4 @@ h10 {
   top: 190px;
   right: 110px;
 }
+
