@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "homepage": "https://zheniasor.github.io/TODO",
+  "homepage": "https://zheniasor.github.io/todo-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
