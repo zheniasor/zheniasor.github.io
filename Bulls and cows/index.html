@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Быки и коровы</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h>Игра "Быки и коровы"</h>
+      <img src="images/bull.png" alt="bull" class="bull" />
+      <img src="images/cow.png" alt="cow" class="cow" />
+    </header>
+    <div class="rules">
+      <h1>Правила:</h1>
+
+      <p>
+        Игроки по очереди пытаются угадать секретный номер друг друга. После
+        каждого угадывания соперник сообщает о количестве совпадений: если
+        угадывается правильная цифра в правильной позиции, это называется «бык»,
+        а если угадывается цифра, но в неправильной позиции, это называется
+        «корова».
+      </p>
+      <p class="text">
+        Введите четыре различные цифры (0 может стоять на первом месте):
+      </p>
+
+      <div class="enter">
+        <input
+          type="number"
+          id="guess"
+          maxlength="4"
+          placeholder="Введите число"
+        />
+        <button id="button">Угадать число</button>
+      </div>
+
+      <p id="answer"></p>
+      <table id="history">
+        <tr>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

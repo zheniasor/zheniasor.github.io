@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", Franklin Gothic;
+}
+header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  margin: 50px;
+}
+.rules {
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.bull {
+  float: left;
+  max-width: 200px;
+  margin-left: 300px;
+}
+.cow {
+  float: right;
+  max-width: 200px;
+  margin-right: 300px;
+}
+.text {
+  margin-top: 50px;
+}
+.enter {
+  max-width: 150px;
+  margin-left: 260px;
+}
+#guess {
+  margin-top: 10px;
+  font-family: inherit;
+  line-height: 2.5;
+  border: 1px solid black;
+  cursor:text;
+  border-radius: 5px;
+}
+#button {
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 1.5;
+  width: 100px;
+  font-family: inherit;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+#history {
+  margin: auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
