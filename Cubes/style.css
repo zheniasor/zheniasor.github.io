@@ -1,0 +1,51 @@
+.container {
+  width: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: "Century gothic";
+  background-color: SteelBlue;
+  border-radius: 50px;
+  color: white;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+  font-family: "Century gothic";
+  border: none;
+  color: steelblue;
+  border-radius: 50px;
+  margin: 1vw;
+  width: 20%;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+#dice {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+#players {
+  margin-bottom: 20px;
+}
+
+.player {
+  margin-bottom: 10px;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#message {
+  margin-bottom: 20px;
+}
+#controls {
+  display: flex;
+  margin: 20px;
+}
