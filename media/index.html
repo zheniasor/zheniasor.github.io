@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мультимедиа</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="video_container">
+        <video
+          id="video"
+          src="media/video.MP4"
+          width="640"
+          height="360"
+          controls
+          preload="metadata"
+          poster="media/minions.jpg"
+        ></video>
+        <div class="buttons">
+          <img src="media/back.png" alt="back" class="icon" id="back" />
+          <img
+            src="media/forward.png"
+            alt="forward"
+            class="icon"
+            id="forward"
+          />
+        </div>
+      </div>
+      <audio id="audio" src="media/audio.mp3" controls></audio>
+    </div>
+    <script src="player.js"></script>
+  </body>
+</html>
