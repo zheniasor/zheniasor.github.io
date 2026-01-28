@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Крестики-нолики</h1>
+      <p>
+        Игроки крестик (Х) и нолик (О) поочередно помечают клетки на сетке
+        размера NxN. Первым ходит крестик. Победил тот, кто первый пометил M -
+        несколько (например, M=4) смежных ячеек (по горизонтали, вертикали или
+        диагонали).
+      </p>
+      <div class="controls">
+        <label for="grid-size"
+          >Размер поля (N):
+          <input type="number" id="grid-size" min="3" max="10" value="3"
+        /></label>
+        <label for="win-condition"
+          >Условие победы (M):
+          <input type="number" id="win-condition" min="3" max="10" value="3"
+        /></label>
+        <div id="status"></div>
+        <button id="reset-game">Новая игра</button>
+      </div>
+      <div id="game-board"></div>
+    </div>
+    <script src="tictactoe.js"></script>
+    <script src="render.js"></script>
+  </body>
+</html>
