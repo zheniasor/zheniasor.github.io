@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-type</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mainMenu">
+      <h1>Игра "Z-Type"</h1>
+      <h3>Правила игры:</h3>
+      <p>
+        Слова падают сверху вниз с разной скоростью. Задача игрока — ввести
+        слово в поле ввода и нажать Enter. Если слово введено правильно — оно
+        исчезнет. Если хоть одно слово достигнет низа экрана —
+        <strong>игра окончена</strong>. Игрок может начать заново или вернуться
+        в меню.
+      </p>
+      <button id="startButton">Начать игру</button>
+    </div>
+    <input
+      type="text"
+      id="inputField"
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+    />
+    <div id="gameArea"></div>
+    <div id="gameOver">
+      <h2>Игра окончена</h2>
+      <div class="gameOverButton">
+        <button id="restartButton">Начать заново</button>
+        <button id="mainButton">Перейти на главную</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="render.js"></script>
+
+  </body>
+</html>

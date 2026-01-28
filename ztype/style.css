@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #eef;
+  font-family: "Poppins", sans-serif;
+}
+
+#inputField {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: none;
+}
+
+#gameOver {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#gameOver h2 {
+  font-size: 30px;
+}
+
+.gameOverButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#restartButton,
+#startButton,
+#mainButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #ba55d3;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#gameArea {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: #ddf;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  margin-top: 60px;
+  display: none;
+}
+
+#mainMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#mainMenu h1 {
+  margin-bottom: 20px;
+}
+
+#mainMenu p,
+h3 {
+  font-size: 18px;
+}
+
+.word {
+  font-size: 24px;
+  position: absolute;
+  opacity: 1;
+  will-change: transform, opacity;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+@keyframes enlargeAndDisappear {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: initial;
+  }
+  50% {
+    transform: scale(1.5);
+    color: green;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    color: green;
+  }
+}
+
+.word.fadeOut {
+  animation: enlargeAndDisappear 1s forwards;
+}
